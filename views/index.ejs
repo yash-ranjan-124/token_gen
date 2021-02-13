@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <h1 class="display-4">Your  token:</h1>
+      <p class="lead"><%= token %></p>
+      <hr class="my-4">
+      <H3>Steps to decode token</H3>
+      <p class="lead">
+        <ol>
+          <li>Copy Above Token And click on  <a href="https://jwt.io/#debugger-io" target="_blank">Link</a></li>
+          <li>Paste the token in text area below Encoded and token will be decoded</li>
+          <li>Copy access token from decoded payload and open this link in new tab /decodeToken/{add your copied decoded token in previous step} <strong>example-></strong> if decoded token is <strong><i>xyzabc</i></strong> then goto link <strong><i> https://stark-wave-93574.herokuapp.com/decodeToken/xyzabc</i></strong></li>
+        </ol>
+        <Strong>NOTE: For best experience open in pc/laptop browser</Strong>
+      </p>
+    </div>
+  </body>
+</html>
